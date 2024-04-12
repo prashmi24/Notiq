@@ -75,5 +75,76 @@
   
     <div class="overlay" data-sidebar-overlay data-sidebar-toggler></div>
 
+    <main class="main">
+        <div class="header">
+            <div class="wrapper">
+                <p class="title text-title-large" data-greeting>
+                    Good Morning
+                </p>
+                <span class="text text-body-medium" data-current-date>Thus, Jan 06 2024</span>
+            </div>
+
+            <button class="theme-btn icon-btn large" aria-label="Toggle theme" data-tooltip="Toggle theme" data-theme-btn>
+                <span class="material-symbols-rounded dark-icon" aria-hidden="true">dark_mode</span> 
+                <span class="material-symbols-rounded light-icon" aria-hidden="true">light_mode</span> 
+                <div class="state-layer"></div>
+            </button>
+
+            <button class="menu-btn icon-btn large" aria-label="Open menu" data-sidebar-toggler>
+                <span class="material-symbols-rounded" aria-hidden="true">menu</span> 
+                <div class="state-layer"></div>
+            </button>
+        </div>
+
+        <h2 class="title text-title-medium" data-note-panel-title>My Notebook</h2>
+
+        <!-- Note list  -->
+
+        <div class="note-list" data-note-panel>
+            <div class="card">
+                <h3 class="card-title text-title-medium">Note title</h3>
+
+                <p class="card-text text-body-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quis neque similique adipisci! Ducimus dolorem doloremque vero labore blanditiis assumenda reprehenderit enim eligendi voluptatem ad sapiente dolorum temporibus sint fugiat, magnam doloribus odio amet aut deserunt minima perspiciatis. Corrupti, mollitia!</p>
+
+                <div class="wrapper">
+                    <span class="card-time text-label-large">20 min ago</span>
+                    <button class="icon-btn large" aria-label="Delete note" data-tooltip="Delete note">
+                        <span class="material-symbols-rounded" aria-hidden="true">delete</span>  
+                    </button>
+                    <div class="state-layer"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAB button (mobile) -->
+
+        <button class="fab" aria-label="New Note" data-note-create-btn>
+            <span class="material-symbols-rounded" aria-hidden="true">
+               add 
+            </span>
+
+            <span class="text text-label-large">New note</span>
+            <div class="state-layer"></div>
+        </button>
+
+        <div class="modal">
+            <button class="icon-btn large" aria-label="Close modal">
+                <span class="material-symbols-rounded" aria-hidden="true">close</span>
+                <div class="state-layer"></div>
+            </button>
+            <input type="text" placeholder="Untitled" class="modal-title text-title-medium" data-note-field>
+            <textarea placeholder="Take a note..." class="modal-text text-body-large custom-scrollbar" data-note-field>Take a note...</textarea>
+
+            <div class="modal-footer">
+                <span class="time text-label-large">
+                    20 min ago
+                </span>
+                <button class="btn-text" data-submit-btn>
+                    <span class="text-label-large">Save</span>
+                    <div class="state-layer"></div>
+                </button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
