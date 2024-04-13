@@ -27,15 +27,15 @@
     <header class="sidebar" data-sidebar>
         <div class="wrapper wrapper-1">
             <a href="/">
-                <img src="" alt="" class="logo-light">
-                <img src="" alt="" class="logo-dark">
+                <img src="" alt="logo-light" class="logo-light">
+                <img src="" alt="logo-dark" class="logo-dark">
             </a>
             <button class="menu-btn icon-btn large" aria-label="Close menu" data-sidebar-toggler>
                 <span class="material-symbols-rounded" aria-hidden="true">close</span>
                 <div class="state-layer"></div>
             </button>
         </div>
-        <button class="fav" data-note-create-btn>
+        <button class="fab" data-note-create-btn>
             <span class="material-symbols-rounded" aria-hidden="true">add</span>
             <span class="text text-label-large">New note</span>
             <div class="state-layer"></div>
@@ -63,7 +63,6 @@
                     <span class="material-symbols-rounded" aria-hidden="true">delete</span> 
                     <div class="state-layer"></div>
                 </button>
-
                 <div class="state-layer"></div>
             </div>
         </nav>
@@ -74,12 +73,11 @@
     </header>
   
     <div class="overlay" data-sidebar-overlay data-sidebar-toggler></div>
-
     <main class="main">
         <div class="header">
             <div class="wrapper">
                 <p class="title text-title-large" data-greeting>
-                    Good Morning
+                    Welcome
                 </p>
                 <span class="text text-body-medium" data-current-date>Thus, Jan 06 2024</span>
             </div>
@@ -101,7 +99,7 @@
         <!-- Note list  -->
 
         <div class="note-list" data-note-panel>
-            <div class="card">
+            <!-- <div class="card">
                 <h3 class="card-title text-title-medium">Note title</h3>
 
                 <p class="card-text text-body-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quis neque similique adipisci! Ducimus dolorem doloremque vero labore blanditiis assumenda reprehenderit enim eligendi voluptatem ad sapiente dolorum temporibus sint fugiat, magnam doloribus odio amet aut deserunt minima perspiciatis. Corrupti, mollitia!</p>
@@ -110,10 +108,10 @@
                     <span class="card-time text-label-large">20 min ago</span>
                     <button class="icon-btn large" aria-label="Delete note" data-tooltip="Delete note">
                         <span class="material-symbols-rounded" aria-hidden="true">delete</span>  
+                        <div class="state-layer"></div>
                     </button>
-                    <div class="state-layer"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- FAB button (mobile) -->
@@ -127,7 +125,7 @@
             <div class="state-layer"></div>
         </button>
 
-        <div class="modal">
+        <!-- <div class="modal">
             <button class="icon-btn large" aria-label="Close modal">
                 <span class="material-symbols-rounded" aria-hidden="true">close</span>
                 <div class="state-layer"></div>
@@ -139,12 +137,41 @@
                 <span class="time text-label-large">
                     20 min ago
                 </span>
-                <button class="btn-text" data-submit-btn>
+                <button class="btn text" data-submit-btn>
                     <span class="text-label-large">Save</span>
                     <div class="state-layer"></div>
                 </button>
             </div>
         </div>
+
+        <div class="overlay modal-overlay" data-model-overlay></div>
+
+        <div class="modal">
+            <h3 class="modal-title text-title-medium">
+                Are you sure you want to delete <strong>"Note title"</strong>
+            </h3>
+            <div class="modal-footer">
+                <button class="btn text">
+                    <span class="text-label-large">Cancel</span>
+                    <div class="state-layer"></div>
+                </button>
+
+                <button class="btn fill">
+                    <span class="text-label-large">Delete</span>
+                    <div class="state-layer"></div>
+                </button>
+            </div>
+        </div> -->
+    
+        
+        
+        <!-- tooltip -->
+    <!-- <span class="tooltip text-body-small">Tooltip text</span> -->
+
+    <!-- <div class="empty-notes">
+        <span class="material-symbols-rounded" aria-hidden="true">note_stack</span>
+        <div class="text-headline-small">No notes</div>
+    </div> -->
     </main>
 </body>
 </html>
