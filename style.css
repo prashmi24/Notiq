@@ -15,12 +15,14 @@
   --text-light: #000000;
   --primary-light: #7bb9f9;
   --secondary-light: #eceff1;
+  --icon-light: #000000;
 
   /* Dark theme */
   --background-dark: #000000;
   --text-dark: #f5f5f5;
   --primary-dark: #7bb9f9;
   --secondary-dark: #eceff1;
+  --icon-dark: #ffffff;
 
   /* Typography */
 
@@ -132,6 +134,7 @@
   --text: var(--text-light);
   --primary: var(--primary-light);
   --secondary: var(--secondary-light);
+  --icon: var(--icon-light);
 }
 
 [data-theme="dark"] {
@@ -141,6 +144,7 @@
   --text: var(--text-dark);
   --primary: var(--primary-dark);
   --secondary: var(--secondary-dark);
+  --icon: var(--icon-dark);
 }
 
 li {
@@ -414,7 +418,7 @@ body {
   place-items: center;
   border-radius: var(--radius-full);
   --state-layer-bg: var(--secondary);
-  color: #000000;
+  color: var(--icon);
 }
 
 .icon-btn.large {
@@ -456,10 +460,6 @@ body {
 .card .card-title {
   color: #000000;
   text-align: center;
-  background-color: #7bb9f9;
-  border-radius: 20px;
-  height: 30px;
-  padding: 3px;
 }
 
 .card .card-text {
@@ -784,7 +784,7 @@ img {
 }
 
 .main .header .text {
-  color: var(--text);
+  color: #000000;
 }
 
 .theme-btn {
